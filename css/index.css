@@ -1,14 +1,14 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   box-sizing: border-box;
 }
 
 body {
   background-color: #212121;
-  cursor: url('../img/cursor.png'), auto;
+  cursor: url("../img/cursor.png"), auto;
 }
 
 :root {
@@ -17,8 +17,6 @@ body {
   --header-height: 6rem;
   --section-height: calc(100vh - var(--header-height));
 }
-
-/*INICIO DE ESTILOS DEL HEADER*/
 
 header {
   height: var(--header-height);
@@ -30,7 +28,7 @@ header {
 }
 
 header li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .logo img {
@@ -47,17 +45,14 @@ header li {
   text-transform: uppercase;
 }
 
-/*FIN DE ESTILOS DEL HEADER*/
-
-/*ESTILOS GENERALES*/
-
-ol, li {
+ol,
+li {
   list-style: none;
 }
 
 .logo img {
   height: 4em;
-  cursor: url('../img/cursor-pointer.png'), pointer;
+  cursor: url("../img/cursor-pointer.png"), pointer;
   transition: all 300ms;
 }
 
@@ -69,10 +64,6 @@ ol, li {
   padding: var(--padding-page);
 }
 
-/*FIN DE ESTILOS GENERALES*/
-
-/*ESTILO DE MENU*/
-
 .menu ol li a {
   display: block;
   color: white;
@@ -80,7 +71,10 @@ ol, li {
 }
 
 .menu ol li a:hover {
-  color: #37bcf9;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transform: scale(1.3, 1.3);
 }
 
@@ -91,9 +85,9 @@ ol, li {
   text-align: center;
   outline: none;
   border: none;
-  background-image: url('../img/menu.svg');
+  background-image: url("../img/menu.svg");
   background-color: transparent;
-  cursor: url('../img/cursor-pointer.png'), pointer;
+  cursor: url("../img/cursor-pointer.png"), pointer;
 }
 
 #btn-menu {
@@ -102,7 +96,7 @@ ol, li {
 
 a {
   text-decoration: none;
-  cursor: url('../img/cursor-pointer.png'), pointer;
+  cursor: url("../img/cursor-pointer.png"), pointer;
 }
 
 .redes a {
@@ -116,31 +110,24 @@ a {
   justify-content: space-between;
 }
 
-/*FIN DE ESTILO DE MENU*/
-
-/*ESTILOS DE BOTON VER MAS*/
-
 .boton {
-  background: linear-gradient( 90deg, rgba(0, 2, 146) 0%, rgb(68, 134, 255) 100%);
+  display: inline-block;
+  background: linear-gradient(to right, #00b4db, #0083b0);
   border: none;
   border-radius: 5px;
   height: 40px;
-  width: 130px;
+  width: 125px;
   font-weight: 800;
   margin-top: 16px;
   outline: none;
-  cursor: url('../img/cursor-pointer.png'), pointer;
+  cursor: url("../img/cursor-pointer.png"), pointer;
   transition: 0.2s;
 }
 
 .boton:hover {
   font-size: 16px;
-  background: linear-gradient( 90deg, rgb(0, 2, 146) 0%, rgb(68, 134, 255) 50%);
+  background: linear-gradient(to right, #00b4db, #0083b0);
 }
-
-/*FIN DEL ESTILOS DE BOTON VER MAS*/
-
-/*ESTILOS DE TEXTO QUIEN SOY YO*/
 
 .hero {
   display: flex;
@@ -151,13 +138,14 @@ a {
 }
 
 .info h1 {
+  font-weight: 100;
   font-size: 30px;
   text-transform: uppercase;
 }
 
 .info strong {
   font-family: sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .info {
@@ -166,10 +154,6 @@ a {
   align-items: center;
   width: 50%;
 }
-
-/*FIN DE ESTILOS DE TEXTO QUIEN SOY YO*/
-
-/*ESTILOS DE IMAGEN PROGRAMER*/
 
 .img-programer {
   display: flex;
@@ -196,10 +180,6 @@ a {
   max-width: 790px;
 }
 
-/*FIN DE ESTILOS DE IMAGEN PROGRAMER*/
-
-/*ESTILOS DE FLORES*/
-
 .flor {
   position: fixed;
   left: -30px;
@@ -208,7 +188,7 @@ a {
   -moz-transform: scaleX(-1);
   transform: scaleX(-1);
   filter: FlipH;
-  -ms-filter: 'FlipH';
+  -ms-filter: "FlipH";
   pointer-events: none;
 }
 
@@ -232,8 +212,6 @@ a {
   user-select: none;
 }
 
-/*DEL INDEX*/
-
 .flor-pro {
   position: fixed;
   right: -30px;
@@ -254,6 +232,7 @@ a {
 
 .flor-vuelta-pro {
   position: fixed;
+  width: 40em;
   left: -30px;
   bottom: -60px;
   -webkit-transform: scaleX(-1);
@@ -262,7 +241,7 @@ a {
 }
 
 .flor-vuelta-pro img {
-  width: 30em;
+  width: 40em;
   opacity: 1;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -271,10 +250,6 @@ a {
   -ms-user-select: none;
   user-select: none;
 }
-
-/*FIN DE ESTILOS DE FLORES*/
-
-/*ESTILOS PARA LA PAGINA DE SOBRE-MI*/
 
 .sobremi {
   display: flex;
@@ -308,21 +283,21 @@ a {
   padding: 0.7em 1em;
   text-align: center;
   font-weight: bold;
-  border: 3px solid #0a863a;
-  color: #0a863a;
+  border: 2px solid #38ef7d;
+  color: #38ef7d;
   border-radius: 5px;
 }
 
 .download-btn.white {
-  border: 2px solid #5DADE2;
-  color: #5DADE2;
+  border: 2px solid #5dade2;
+  color: #5dade2;
 }
 
 .download-icon {
   width: 1rem;
   height: 1rem;
   display: inline-block;
-  background-image: url('../img/download.svg');
+  background-image: url("../img/download.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -367,7 +342,7 @@ a {
   width: 95%;
   height: 100%;
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1em;
   flex-wrap: wrap-reverse;
   padding: 50px;
@@ -381,13 +356,23 @@ a {
 }
 
 .gradient-border:after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(-1 * var(--borderWidth));
   left: calc(-1 * var(--borderWidth));
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
-  background: linear-gradient( 60deg, #667db6, #0082c8, #0082c8, #667db6, #58D68D, #1098ad, #F4D03F, #6fba82);
+  background: linear-gradient(
+    60deg,
+    #667db6,
+    #0082c8,
+    #0082c8,
+    #667db6,
+    #58d68d,
+    #1098ad,
+    #f4d03f,
+    #6fba82
+  );
   border-radius: calc(2 * var(--borderWidth));
   z-index: -1;
   -webkit-animation: animatedgradient 3s ease alternate infinite;
@@ -418,10 +403,6 @@ a {
     background-position: 0% 50%;
   }
 }
-
-/*FIN DE ESTILOS PARA LA PAGINA DE SOBRE-MI*/
-
-/*ESTILOS PARA LA PAGINA PROYECTOS*/
 
 .ProyectosSection {
   font-size: 12px;
@@ -490,7 +471,7 @@ a {
 
 .card-proyecto h1 {
   font-size: 2.2em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   transition: 0.2s;
 }
 
@@ -512,11 +493,11 @@ a {
 }
 
 .card-1 {
-  background: linear-gradient(90deg, #56CCF2, #0575e6);
+  background: linear-gradient(90deg, #26d7ff, #029bce);
 }
 
 .card-2 {
-  background: linear-gradient(90deg, #0575E6, #021B79);
+  background: linear-gradient(90deg, #56ccf2, #2f80ed);
 }
 
 .filter {
@@ -524,10 +505,6 @@ a {
   opacity: 0;
   order: 1;
 }
-
-/*FIN DE ESTILOS PARA LA PAGINA PROYECTOS*/
-
-/*ESTILOS PARA BARRA HORIZONTAL DE CONTACTO*/
 
 .illustration-team {
   width: 24.25em;
@@ -554,7 +531,10 @@ a {
 }
 
 @keyframes mano-izquierda {
-  45%, 0%, 55%, 100% {
+  45%,
+  0%,
+  55%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -563,7 +543,10 @@ a {
 }
 
 @keyframes mano-derecha {
-  45%, 0%, 55%, 100% {
+  45%,
+  0%,
+  55%,
+  100% {
     transform: translateX(0);
   }
   50% {
@@ -586,8 +569,9 @@ a {
   background: #4c4f5a;
 }
 
-.illustration-team .marks .mark:before, .illustration-team .marks .mark:after {
-  content: '';
+.illustration-team .marks .mark:before,
+.illustration-team .marks .mark:after {
+  content: "";
   position: absolute;
   left: 0;
   width: 0.3125em;
@@ -605,11 +589,14 @@ a {
   height: 0.625em;
 }
 
-.illustration-team .marks .mark-1, .illustration-team .marks .mark-4, .illustration-team .marks .mark-5 {
+.illustration-team .marks .mark-1,
+.illustration-team .marks .mark-4,
+.illustration-team .marks .mark-5 {
   height: 3.125em;
 }
 
-.illustration-team .marks .mark-2, .illustration-team .marks .mark-3 {
+.illustration-team .marks .mark-2,
+.illustration-team .marks .mark-3 {
   height: 1.875em;
 }
 
@@ -642,10 +629,12 @@ a {
 }
 
 @keyframes mark-color {
-  40%, 60% {
+  40%,
+  60% {
     background: #4c4f5a;
   }
-  41%, 59% {
+  41%,
+  59% {
     background: #fff;
   }
 }
@@ -661,7 +650,8 @@ a {
   align-items: center;
 }
 
-.illustration, .form {
+.illustration,
+.form {
   width: 50%;
   display: flex;
   align-items: center;
@@ -690,7 +680,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #D31027, #f5a330);
+  background: linear-gradient(90deg, #03a4da, #03a4da);
   border-radius: 5px;
   margin-bottom: 30px;
 }
@@ -720,10 +710,6 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-/*FIN DE ESTILOS PARA BARRA HORIZONTAL DE CONTACTO*/
-
-/*ESTILOS PARA PROYECTOS*/
-
 .proyecto-item {
   height: 200px;
   background-color: #303030;
@@ -745,7 +731,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .proyecto-item h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 15px;
   align-items: center;
   color: var(--color);
@@ -773,7 +759,7 @@ textarea::-webkit-scrollbar-thumb {
   position: absolute;
   left: 55%;
   bottom: 6%;
-  object-fit: contain
+  object-fit: contain;
 }
 
 .contenedor-item {
@@ -811,7 +797,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .circulo-verde {
-  background: linear-gradient(270deg, #FDFC47 0%, #24FE41 100%);
+  background: linear-gradient(270deg, #fdfc47 0%, #24fe41 100%);
 }
 
 .info-item {
@@ -850,7 +836,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .search-search {
-  background-image: url('../img/search.svg');
+  background-image: url("../img/search.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: 15px 15px;
@@ -864,11 +850,11 @@ textarea::-webkit-scrollbar-thumb {
   bottom: 0;
   top: 0;
   outline: none;
-  cursor: url('../img/cursor-pointer.png'), pointer;
+  cursor: url("../img/cursor-pointer.png"), pointer;
 }
 
 .cancel-search-search {
-  background-image: url('../img/cancelSearch.svg');
+  background-image: url("../img/cancelSearch.svg");
 }
 
 .projects-list {
@@ -884,7 +870,7 @@ textarea::-webkit-scrollbar-thumb {
 .project-type-title {
   font-size: 50px;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .noScrollBar::-webkit-scrollbar {
@@ -977,5 +963,15 @@ textarea::-webkit-scrollbar-thumb {
   width: 1.5em;
   height: 1.5em;
 }
+.link {
+  background-image: url(../img/ver-sitio.svg);
+  background-repeat: no-repeat;
+}
 
-/*FIN DE ESTILOS PARA PROYECTOS*/
+#ultimo + div {
+  visibility: hidden;
+}
+
+#busqueda {
+  display: none;
+}

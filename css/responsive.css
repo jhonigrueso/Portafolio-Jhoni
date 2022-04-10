@@ -13,10 +13,8 @@
     width: 100%;
   }
   .flor-pro img {
-    width: 30em;
-  }
-  .flor-vuelta-pro a img {
-    width: 30em;
+    width: 16em;
+        margin-left: 22em;
   }
   .sobre-mi-info_btn {
     grid-template-columns: 1fr;
@@ -38,11 +36,9 @@
   .info-card {
     font-size: 13px;
   }
-  .flor-pro img {
-    width: 20em;
-  }
   .flor-vuelta-pro img {
-    width: 20em;
+    width: 16em;
+    margin-left: 22em;
   }
   .illustration {
     display: none;
@@ -74,7 +70,6 @@
   .burger-button {
     display: block;
   }
-  /*INICIO DE MENU TOGGLE */
   .menu {
     position: absolute;
     background: rgba(33, 33, 33, 0.9);
@@ -90,7 +85,7 @@
     transition: all 0.3s;
     font-size: 18px;
   }
-  #btn-menu:checked~.menu {
+  #btn-menu:checked ~ .menu {
     transform: translateX(0%);
   }
   .gradient-border {
@@ -107,12 +102,11 @@
     margin: 1em;
     font-size: 2em;
   }
-  #btn-menu:checked~.burger-button {
-    background-image: url('../img/cancel.svg');
+  #btn-menu:checked ~ .burger-button {
+    background-image: url("../img/cancel.svg");
     position: relative;
     z-index: 3;
   }
-  /*FIN DE MENU TOGGLE */
   .form {
     width: 100%;
   }
